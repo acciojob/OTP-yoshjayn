@@ -15,4 +15,13 @@ for (let i = 0; i < inputs.length; i++) {
       inputs[i - 1].focus(); // Move focus to the previous field
     }
   });
+
+  // Add/remove focused class on focus/blur
+  inputs[i].addEventListener("focus", () => {
+    inputs[i].classList.add("focused"); // Add focused class
+  });
+
+  inputs[i].addEventListener("blur", () => {
+    inputs[i].classList.remove("focused"); // Remove focused class
+  });
 }

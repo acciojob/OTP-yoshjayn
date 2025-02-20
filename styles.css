@@ -54,3 +54,8 @@ body {
 .code::placeholder {
   color: #ccc;
 }
+
+.code.focused {
+  border-color: #007bff; /* Highlight the focused input */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a glow effect */
+}
